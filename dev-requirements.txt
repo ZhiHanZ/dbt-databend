@@ -1,0 +1,29 @@
+# install latest changes in dbt-core
+git+https://github.com/dbt-labs/dbt-core.git#egg=dbt-core&subdirectory=core
+git+https://github.com/dbt-labs/dbt-core.git#egg=dbt-tests-adapter&subdirectory=tests/adapter
+
+black==22.3.0
+bumpversion
+flake8
+flaky
+freezegun==0.3.12
+ipdb
+mypy==0.782
+pip-tools
+pre-commit
+pytest
+pytest-dotenv
+pytest-logbook
+pytest-csv
+pytest-xdist
+pytz
+tox>=3.13
+twine
+wheel
+databend-py==0.0.8
+environs
+mysql-connector-python>=8.0.0,<8.1
+
+# Clickhouse sqlalchemy
+https://github.com/youngsofun/clickhouse-sqlalchemy/archive/a116e3162c699c12e63a689385b547f639c13018.zip
+dbt-tests-adapter
